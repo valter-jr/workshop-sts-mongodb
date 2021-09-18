@@ -18,4 +18,8 @@ public class UserService {
 		return userRepository.findAll();
 	}
 	
+	public void saveAll(List<User> userList) {
+		userRepository.saveAll(userList);
+	}
+	
 }
